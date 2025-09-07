@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Interactive Web Page with JavaScript</h1>
+
+  <!--  Part 1 & 2: Interactive Buttons -->
+  <section>
+    <h2>Light/Dark Mode</h2>
+    <button id="toggleModeBtn">Toggle Mode</button>
+  </section>
+
+  <section>
+    <h2>Counter</h2>
+    <button id="decrease">-</button>
+    <span id="counter">0</span>
+    <button id="increase">+</button>
+  </section>
+
+  <!--  Part 3: Form -->
+  <section>
+    <h2>Signup Form</h2>
+    <form id="signupForm" novalidate>
+      <label>
+        Name:
+        <input type="text" id="name" />
+        <span class="error" id="nameError"></span>
+      </label>
+      <br />
+      <label>
+        Email:
+        <input type="email" id="email" />
+        <span class="error" id="emailError"></span>
+      </label>
+      <br />
+      <label>
+        Password:
+        <input type="password" id="password" />
+        <span class="error" id="passwordError"></span>
+      </label>
+      <br />
+      <button type="submit">Submit</button>
+      <p id="formSuccess" class="success"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
